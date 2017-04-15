@@ -5,12 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Quanli.Gynopro</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <script src="Asset/jquery-3.1.1.min.js"></script>
   <link rel="stylsheet" href="Asset/bootstrap.css">
   <link rel="stylesheet" href="Asset/bootstrap.min.css">
+	<script type="text/javascript" src="Asset/bootstrap.min.js"></script>
+  <link href="Asset/bootstrap-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="Asset/AdminLTE.min.css">
   <link rel="stylesheet" href="Asset/skin-blue.min.css">
+  <script src="https://momentjs.com/downloads/moment.js"> </script>
+  <script src="Asset/bootstrap-datepicker.js"></script>
+  <link href="Asset/datepicker.css">
+  <script src="Asset/app.min.js"></script> 
+  <style>
+
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -25,12 +35,6 @@
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Admin</b>LTE</span>
     </a>
-
-    <!-- Code here -->
-
-
-    
-    <!-- Code here -->
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -247,7 +251,30 @@
     <!-- Main content -->
     <section class="content">
 
-      <!-- Your Page Content Here -->
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="row" style="background: white; border-radius: 1%">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <span style="font-size: 20px"> <i class="fa fa-calendar"> </i> Lọc theo ngày </span>
+          </div>
+          <br>
+          <hr>
+          <div class='col-md-4 col-sm-8 col-xs-12 pull-right'>
+              <div class="form-group">
+                  <div class='input-group date' id="datetimepicker1" >
+                      <input type='text' class="form-control">
+                      <span class="input-group-addon">
+                          <i class="fa fa-calendar"></i>
+                      </span>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $("#datetimepicker1").datepicker();
+            });
+        </script>
+      </div>
 
     </section>
     <!-- /.content -->
@@ -335,26 +362,15 @@
       </div>
       <!-- /.tab-pane -->
     </div>
+    
+  
   </aside>
+    
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
 
-<!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 2.2.3 -->
-<script src="Asset/jquery-3.1.1.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="Asset/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="Asset/app.min.js"></script>
-
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. Slimscroll is required when using the
-     fixed layout. -->
 </body>
 </html>
